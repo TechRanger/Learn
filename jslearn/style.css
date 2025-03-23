@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma;
+    background-color: #ffffff;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+    width: 300px;
+}
+  
+  /* 输入框标签 */
+.form-label {
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    font-size: 14px;
+    color: #7b8a9c;
+    pointer-events: none;
+    transform: translateY(18px);
+    transition: all 0.25s ease;
+    background-color: #ffffff;
+    padding: 0 5px;
+}
+  
+  /* 输入框样式 */
+.form-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #dce1e8;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+}
+  
+  /* 悬停效果 */
+.form-input:hover {
+    border-color: #b3bac5;
+}
+  
+  /* 聚焦效果 */
+.form-input:focus {
+    border-color: #4a7bff;
+    box-shadow: 0 0 0 3px rgba(74, 123, 255, 0.2);
+}
+  
+  /* 聚焦时标签上移动画 */
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-10px) scale(0.85);
+    color: #4a7bff;
+    font-weight: 500;
+}
+  
+  /* 提示文字样式 */
+.form-input::placeholder {
+    color: transparent;
+}
+  
+  /* 提交按钮样式 */
+.submit-btn {
+    background-color: #4a7bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(74, 123, 255, 0.3);
+    width: 100%;
+    font-weight: 500;
+}
+  
+.submit-btn:hover {
+    background-color: #3563e9;
+    box-shadow: 0 4px 8px rgba(74, 123, 255, 0.4);
+    transform: translateY(-2px);
+}
+  
+.submit-btn:active {
+    transform: translateY(0);
+}
